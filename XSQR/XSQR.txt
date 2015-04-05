@@ -1,0 +1,50 @@
+1→L
+ClrHome
+Input "Significance level:",C
+ClrHome
+χ²-Test([A],[B])
+"χ²="→Str1
+prgmPTSTR
+Output(L-1,4,χ²)
+"df="→Str1
+prgmPTSTR
+Output(L-1,4,[df])
+"p="→Str1
+prgmPTSTR
+Output(L-1,3,[p])
+1→M
+dim([B])→ʟD
+For(I,1,ʟD(1))
+For(J,1,ʟD(2))
+If [B](I,J)<5:Then
+0→M
+Goto E
+End
+End
+End
+Lbl E
+If M=1:Then
+"L.S.S. condition met."→Str1
+Else
+"L.S.S. condition not met."→Str1
+End
+prgmPTSTR
+If [p]<C:Then
+"Reject H0."→Str1
+Else
+"Fail to reject H0."→Str1
+End
+prgmPTSTR
+[A]→[C]
+For(I,1,ʟD(1))
+For(J,1,ʟD(2))
+[A](I,J)→O
+[B](I,J)→E
+(O-E)²/E→[C](I,J)
+End
+End
+"χ² contributions stored"→Str1
+prgmPTSTR
+"to [C]."→Str1
+prgmPTSTR
+prgmEND
