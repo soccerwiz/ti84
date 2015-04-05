@@ -10,4 +10,4 @@ to use these programs.
 # IMPORTANT NOTE
 
 It is probably necessary that you install the PTSTR and END programs on your calculator,
-as many of my programs rely on this one.
+as many of my programs rely on them.
