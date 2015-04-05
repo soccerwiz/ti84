@@ -1,0 +1,8 @@
+ClrList ʟCNTRB
+ClrList ʟEXC
+ClrList ʟEXP
+ClrList ʟOBS
+SetUpEditor ʟOBS,ʟEXP,ʟEXC,ʟCNTRB
+1→L
+"List editor configured."→Str1
+prgmPTSTR

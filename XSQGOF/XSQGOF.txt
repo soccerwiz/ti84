@@ -1,0 +1,29 @@
+1→L
+ClrHome
+Input "Significance level:",C
+ClrHome
+ʟEXP*sum(ʟOBS)→ʟEXC
+If sum(ʟEXC≥5)=dim(ʟEXC):Then
+"L.S.S. condition met."→Str1
+Else
+"L.S.S. condition not met."→Str1
+End
+prgmPTSTR
+dim(ʟOBS)-1→D
+χ²GOF-Test(ʟOBS,ʟEXC,D)
+"χ²="→Str1
+prgmPTSTR
+Output(L-1,4,χ²)
+"df="→Str1
+prgmPTSTR
+Output(L-1,4,[df])
+"p="→Str1
+prgmPTSTR
+Output(L-1,3,[p])
+If [p]<C:Then
+"Reject H0"→Str1
+Else
+"Fail to Reject H0"→Str1
+End
+prgmPTSTR
+prgmEND
