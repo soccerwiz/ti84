@@ -1,0 +1,10 @@
+ClrHome
+"AX^2+BX+C"→Str1
+prgmPTSTR:Disp ""
+Input "A=",A
+Input "B=",B
+Input "C=",C
+{0,0}→ʟX
+(⁻B+√(B²-4AC))/(2A)→ʟX(1)
+(⁻B-√(B²-4AC))/(2A)→ʟX(2)
+Disp ʟX
