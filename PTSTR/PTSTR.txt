@@ -1,0 +1,2 @@
+Output(L,1,Str1)
+L+1→L
