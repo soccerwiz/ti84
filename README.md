@@ -9,5 +9,5 @@ to use these programs.
 
 # IMPORTANT NOTE
 
-It is probably necessary that you install the PTSTR program on your calculator,
+It is probably necessary that you install the PTSTR and END programs on your calculator,
 as many of my programs rely on this one.
