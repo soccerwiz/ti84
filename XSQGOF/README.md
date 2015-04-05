@@ -15,3 +15,6 @@ calcuated *automatically*.
 4. Run the XSQGOF program. The two other lists will be filled with your 
 expected counts (EXC) and the contribution scores (CNTRB) for follow up in
 the problem.
+5. The program will output all relevant test information as well as whether
+the Null Hypothesis can be rejected and if the Large Sample Size (expected counts
+>= 5) condition was met.
